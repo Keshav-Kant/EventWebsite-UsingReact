@@ -1,0 +1,343 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.0rem;
+}
+
+.home-child {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #080808;
+  border: 2px solid #d9d9d9;
+  box-sizing: border-box;
+  width: 95%;
+  height: 65px;
+}
+li {
+  list-style: none;
+}
+
+.mmlogo-1-icon {
+  top: 0;
+  width: 60px;
+  height: 50px;
+  display: flex;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-section,.middle-section,.end-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: calc(8px + 0.6vw);
+}
+
+
+.left-section{
+  font-size: 21px;
+  font-family: 'Mabry Pro black';
+}
+.middle-section {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    font-weight: 300;
+    
+}
+
+.line-div {
+    position: relative;
+    border-right: 1.5px solid #d9d9d9;
+    box-sizing: border-box;
+    width: 0.09rem;
+    height: calc(10px + 2vh);
+    margin: 0px 10px 0px 10px ;
+  }
+
+
+  .mohanamantra23 {
+    
+      font-size: calc(8px + 0.6vw);
+    
+    font-weight: 900;
+  }
+
+
+.end-section{
+  position: relative;
+    right: 2rem;
+    font-size: calc(8px + 0.6vw);
+    font-family: 'Mabry Pro black';
+
+}
+.mobile-menu{
+  display: none;
+}
+
+.item{
+  font-size: 21px;
+  font-family: 'Mabry Pro light';
+}
+
+.mobile-menu-button{
+  display: none;
+}
+
+/* Media query for screens less than 900px */
+@media (max-width: 900px) {
+  .mobile-menu{
+    display: block;
+  }
+  .home-child {
+    display: none;
+  }
+  .mobile-menu-button {
+    background: #090909;
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: -100%; /* Start off-screen from the top */
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #080808;
+    transition: top 0.3s ease; /* Change 'right' to 'top' for the transition */
+    z-index: 1000;
+    overflow-y: auto; /* Add scroll capability if needed */
+  }
+
+  .mobile-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .mobile-menu.open {
+    top: 0; /* Slide in from the top when open */
+  }
+
+  /* Add styles for mobile menu links */
+  .mobile-menu .nav-item {
+    padding: 15px;
+  }
+
+ 
+  /* Styling list */
+  .header__nav-item {
+    list-style: none;
+  }
+
+
+  $burger_stroke: 3px;
+$blue: #ffffff;
+$red: #ff1616;
+$time-link: 0.4s;
+
+.burger__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  right: 2%;
+  z-index: 9999;
+
+}
+.line {
+  fill: none;
+  stroke: $blue;
+  stroke-width: $burger_stroke;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: $burger_stroke;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: $burger_stroke;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: $burger_stroke;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: $burger_stroke;
+  stroke: #ff258e;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: $burger_stroke;
+  stroke: #58e7b7;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: $burger_stroke;
+  stroke: #58e7b7;
+}
+
+.container {
+    margin: 0 auto;
+}
+.burger__container {
+  position: relative;
+}
+.burger__nav {
+  transition: max-height $time-link linear;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  margin: 0px auto;
+  max-height: 0;
+  padding: 0; 
+  position: relative;
+  background-color: rgba(#ffffff, 0.9);
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  & .header__nav-item:last-child {
+      padding-bottom: 25px;
+  }
+}
+.burger__nav-open {
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    transition: max-height $time-link linear;
+    margin: 0px auto;
+    max-height: 400px;   
+    position: absolute;
+    background-color: rgba(#ffffff, 0.9);
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header {
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-item {
+        }
+        &-link {
+            display: inline-block;
+            padding: 0;
+            border-radius: 10px;
+            text-decoration: none;
+            letter-spacing: -0.012em;
+            transition: $time-link;
+            &::after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: $red;
+                transform: scale(0);
+                display: block;
+                transition: $time-link;
+                margin-top: 3px;
+                transform-origin: left;
+            }
+            &:hover {
+                &::after {
+                  transform: scale(1);
+                  transition: $time-link linear;
+                }
+            }
+        }
+  }
+}
+
+
+
+/* styling list */
+.header__nav-item {
+  list-style: none;
+}
+
+.top-section{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.middle-section-open{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.nav-item-open{
+  display: flex;
+  align-items: center;
+}
+.nav-link-open-main {
+  font-family: "Mabry Pro black";
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+.nav-link-open {
+  font-family: "Mabry Pro light";
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+.left-section-open{
+  display: block;
+}
+.nav-item-open-visible{
+  position: absolute;
+    left: 1%;
+    display: flex;
+   
+}
+
+.mohanamantra23-open {
+  font-size: calc(14px + 1vw);
+  font-weight: 900;
+}
+
+
+
+}
+

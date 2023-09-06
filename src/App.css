@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family: 'Mabry Pro black';
+    src: url('./fonts/mabrypro/MabryPro-Black.ttf') format('truetype');
+    /* Add additional font formats (woff, woff2, etc.) if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Mabry Pro light';
+    src: url('./fonts/mabrypro/MabryPro-Light.ttf') format('truetype');
+    /* Add additional font formats (woff, woff2, etc.) if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-mabry-pro: "Mabry Pro";
+
+  /* font sizes */
+  --font-size-2xl: 21px;
+
+  /* Colors */
+  --color-gray-100: #080808;
+  --color-gainsboro: #d9d9d9;
+  --color-white: #fff;
+
+  /* border radiuses */
+  --br-31xl: 50px;
+}
+
+
+
+body::-webkit-scrollbar{
+  display: none;
+}

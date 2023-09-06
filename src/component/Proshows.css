@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Manrope:wght@600&family=Pacifico&family=Poppins:wght@400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.proshow {
+  position: relative;
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+}
+
+.proshow-child {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  border-radius: 50px;
+  background-color: #d9d9d9;
+  border: 2px solid #080808;
+  box-sizing: border-box;
+  width: 8%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-proshow {
+  color: #080808;
+  font-family: "Mabry pro black";
+  font-size: 21px;
+}
+
+.register-div-proshow {
+  width: 100%;
+  height: 12%;
+}
+
+.pro-shows-main {
+  position: relative;
+  font-family: "Mabry Pro black";
+  text-align: center;
+  
+  text-underline-position: 1px;
+  color: #080808;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -3.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cube33d-1-icon-proshows {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  object-fit: cover;
+  mix-blend-mode: exclusion;
+}
+
+.card {
+  position: relative;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 23.97px rgba(0, 0, 0, 0.03),
+    0 3.196650743484497px 47.95px rgba(0, 0, 0, 0.08),
+    0 0 1.6px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  height: 60vh;
+  flex-shrink: 0;
+}
+
+.card2 {
+  position: relative;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 23.97px rgba(0, 0, 0, 0.03),
+    0 3.196650743484497px 47.95px rgba(0, 0, 0, 0.08),
+    0 0 1.6px rgba(0, 0, 0, 0.3);
+  width:350px;
+  height: 60vh;
+  flex-shrink: 0;
+  margin: 2% 2% 0 2%;
+}
+
+.card-example-4jpeg-icon {
+  position: absolute;
+  border-radius: 25px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 62vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.middle-proshows {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divflex {
+  position: relative;
+  top: 0;
+  left: 1.2rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 7.33rem 1.2rem 1.2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: black;
+  z-index: 1;
+}
+
+.proshow-inner {
+  position: relative;
+  border-top: 0.4px solid #080808;
+  box-sizing: border-box;
+  width: 20%;
+  height: 0.3rem;
+}
+
+.what-to-watch {
+  position: relative;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+color: rgba(255, 255, 255, 0.60);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.heading-4 {
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 300px;
+  }
+  .card2 {
+    width: 300px;
+    margin: 3% 2% 0% 2%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 250px;
+    height: 50vh;
+  }
+  .card2 {
+    width: 250px;
+    margin: 3% 2% 0% 2%;
+    height: 50vh;
+  }
+  .card-example-4jpeg-icon {
+    height: 50vh;
+  }
+  
+}
+
+@media (max-width:768px){
+  .pro-shows-main {
+  font-size: calc(8vw + 10px);
+  }
+}
+@media (max-width: 500px) {
+  .card {
+    width: 220px;
+    height: 50vh;
+  }
+  .card2 {
+    width: 220px;
+    margin: 3% 5% 0% 5%;
+    height: 50vh;
+  }
+  .card-example-4jpeg-icon {
+    height: 50vh;
+  }
+  
+}

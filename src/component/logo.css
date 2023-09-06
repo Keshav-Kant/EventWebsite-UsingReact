@@ -1,0 +1,244 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.mohana-mantra {
+  position: relative;
+  font-family: "Mabry Pro black";
+  font-size: calc(10vw + 5px);
+  letter-spacing: -0.05em;
+  font-weight: 900;
+  color: #d9d9d9;
+}
+
+.mohana {
+  background: linear-gradient(
+    268.97deg,
+    #00fff0,
+    rgba(157, 255, 80, 0.52) 43.2%,
+    #ff258e 57.49%,
+    rgba(239, 50, 255, 0.41)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bottom-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cube33d-1-icon {
+    position: absolute;
+    mix-blend-mode: screen;
+    right: -3%;
+    width: 30%;
+}
+
+.bottom-item-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 35%;
+  font-size: calc(1vw + 1px);;
+  font-family: "Mabry Pro light";
+}
+
+.rectangle-div {
+  position: relative;
+  border-radius: 50px;
+  background-color: #080808;
+  border: 2px solid #d9d9d9;
+  box-sizing: border-box;
+  width: 100%;
+  height: 4rem;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.celebration-of-talentsalutati-container {
+  font-family: "Mabry Pro light";
+  color: #d9d9d9;
+  text-align: center;
+  font-size: calc(1vw + 5px);
+  letter-spacing: calc(0.08vw + 1px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  line-height: 10px;
+  margin-bottom: 30px;
+}
+
+.scroll-to-view {
+  margin-top: 45px;
+  color: #d9d9d9;
+  text-align: center;
+  font-family: "Mabry Pro light";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  mix-blend-mode: hard-light;
+}
+
+
+.earth-container {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  transform: translate(-14%,50%);
+  z-index: 1;
+  mix-blend-mode: difference;
+
+}
+
+.earth-image {
+  position: relative;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    animation: rotateEarth 20s linear infinite;
+
+  }
+
+  @keyframes rotateEarth {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@media screen and (max-width: 1600px) {
+  .cube33d-1-icon {
+    position: absolute;
+    mix-blend-mode: screen;
+    right: -3%;
+    width: 30%;
+    transform: translate(5%, -5%);
+}
+}
+@media screen and (max-width: 1200px) {
+  .celebration-of-talentsalutati-container{
+    font-size: calc(2vw + 1px);
+    letter-spacing: calc(0.10vw + 1px);
+  }
+  .cube33d-1-icon {
+    position: absolute;
+    mix-blend-mode: screen;
+    right: -3%;
+    width: 30%;
+    transform: translate(5%, -10%);
+}
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .bottom-item-button {
+    width: 45%;
+    font-size: calc(1vw + 5px);
+}
+.cube33d-1-icon {
+  position: absolute;
+  mix-blend-mode: screen;
+  right: -3%;
+  width: 30%;
+  transform: translate(5%, -18%);
+}
+}
+@media  (max-width: 900px){
+.cube33d-1-icon {
+    position: absolute;
+    mix-blend-mode: screen;
+    right: -3%;
+    width: 35%;
+    transform: translate(15%, -15%);
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .center-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+  .mohana-mantra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(18vw + 8px);
+  }
+  .celebration-of-talentsalutati-container{
+    font-size: calc(2vw + 5px);
+    letter-spacing: calc(0.25vw + 1px);
+  }
+  .bottom-item-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+    font-size: calc(1vw + 10px);
+    height: 30vh;
+}
+.cube33d-1-icon {
+  position: absolute;
+  mix-blend-mode: screen;
+  right: -3%;
+  transform: translate(45%, 45%);
+  width: 100%;
+}
+.rectangle-div {
+  height: 3.5rem;
+  margin-right: 0px;
+}
+
+.logo {
+  margin-top: 35%;
+}
+.earth-image {
+  width: 50%;
+}
+.earth-container {
+  transform: translate(-25%,50%);
+}
+
+}
+
+
+@media (max-width:400px){
+  .logo {
+    margin-top: 32%;
+  }
+  .mohana-mantra {
+    font-size: calc(16vw + 8px);
+    line-height: 10vh;
+}
+.celebration-of-talentsalutati-container{
+  font-size: calc(1.5vw + 5px);
+  letter-spacing: calc(0.25vw + 1px);
+  margin-bottom: 15px;
+}
+.rectangle-div {
+  height: 3rem;
+  margin-right: 0px;
+}
+.cube33d-1-icon {
+  position: absolute;
+  mix-blend-mode: screen;
+  right: -3%;
+  transform: translate(40%, 5%);
+  width: 100%;
+}
+}

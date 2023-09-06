@@ -1,0 +1,40 @@
+/* CustomCursor.css */
+
+:root{
+	--main-circle-size: 12px;
+	--second-circle-size: 40px;
+}
+.custom-cursor {
+    position: absolute;
+	width: var(--main-circle-size);
+	height: var(--main-circle-size);
+	margin-top: calc(-1 * var(--main-circle-size) / 2);
+	margin-left: calc(-1 * var(--main-circle-size) / 2);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	transition: opacity .3s;
+	mix-blend-mode: difference;
+	z-index: 0; /* Center the cursor on the pointer */
+    
+  }
+  
+  .inner-circle {
+   position: absolute;
+	transition: transform .15s, width .3s, height .3s, margin .3s;
+	width: var(--second-circle-size);
+	height: var(--second-circle-size);
+	top: 0;
+	left: 0;
+	margin-top: calc(-1 * var(--second-circle-size) / 2);
+	margin-left: calc(-1 * var(--second-circle-size) / 2);
+	background: white;
+	border-radius: 50%;
+	pointer-events: none;
+	mix-blend-mode: difference;
+	z-index: 2;
+  }
+  

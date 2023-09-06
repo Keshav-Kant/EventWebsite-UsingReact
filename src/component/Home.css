@@ -1,0 +1,18 @@
+/* Existing styles for .home and .mohanamantra23 */
+.home {
+  position: relative;
+  background-color: #090909;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 1.31rem;
+  color: #fff;
+  font-family: "Mabry Pro";
+}
+
+.mohanamantra23 {
+  position: relative;
+  font-weight: 900;
+}
+
+/* New styles for .earth-container and .earth-image */

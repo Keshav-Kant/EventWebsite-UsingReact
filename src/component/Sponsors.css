@@ -1,0 +1,166 @@
+:root {
+    --color-text: papayawhip;
+    --color-bg: transparent;
+    --color-bg-accent: #41414e;
+    --size: clamp(10rem, 3rem + 40vmin, 30rem);
+    --gap: calc(var(--size) / 14);
+    --duration: 100s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--gap));
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: papayawhip;
+    --color-bg: black;
+    --color-bg-accent: #41414e;
+  }
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+.sponsor-marquee {
+    display: grid;
+    align-content: center;
+    /* overflow: hidden; */
+    gap: var(--gap);
+    width: 100vw;
+    min-height: 60vh;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    /* background-color: var(--color-bg); */
+    margin-top: -3em;
+}
+
+.marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);}
+.main-spon{
+    background-color: #090909;
+    padding-top: 5%;
+
+}
+.main-spon h1{
+    padding: 0;
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+}
+.logoSponsor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.sponsorImg {
+    margin: auto;
+}
+
+.marquee__group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    max-width: 250%;
+    animation: scroll-x var(--duration) linear infinite;
+}
+
+.About-spon{
+    display: flex;
+    justify-content: center;
+    font-family: "Mabry Pro black";
+}
+
+@keyframes scroll-x {
+    from {
+        transform: translateX(var(--scroll-start));
+    }
+    to {
+        transform: translateX(var(--scroll-end));
+    }
+}
+
+@keyframes scroll-y {
+    from {
+        transform: translateY(var(--scroll-start));
+    }
+    to {
+        transform: translateY(var(--scroll-end));
+    }
+}
+
+.logoSponsor {
+    display: grid;
+    place-items: center;
+    width: var(--size);
+    fill: var(--color-text);
+    aspect-ratio: 16/9;
+    padding: calc(var(--size) / 10);
+    border-radius: 0.5rem;
+}
+
+.logoSponsor img {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    margin: auto;
+    max-width: 100vw;
+}
+
+@keyframes fade {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+.sponsorHead {
+    font-family: 'Signboard';
+    padding-bottom: 2em;
+    text-align: center;
+   
+}
+.sponsor-marquee {
+    max-width: 90%;
+}
+.main-spon {
+    position: static;
+    padding-top: 5%;
+
+  }
+
+
+
+  @media (max-width:768px){
+    .main-spon h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    }
+  }
+
+  @media (max-width:450px){
+    .main-spon h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    }
+  }
